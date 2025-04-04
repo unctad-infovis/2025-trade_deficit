@@ -2,15 +2,15 @@
 @import 'colors.less';
 
 #app-root-2025-trade_deficit .app {
-  font-family: Inter, Helvetica, Arial, sans-serif;
-  @blue: #009edb;
-  @yellow: #ffcb05;
   @bg: #fff;
-  @text: #000;
+  @blue: #009edb;
   @muted: #666;
-  max-width: 700px;
+  @text: #000;
+  @yellow: #ffcb05;
+  font-family: Inter, Helvetica, Arial, sans-serif;
   margin: auto auto;
-
+  max-width: 700px;
+  transition: opacity 1s ease;
   .title_container {
     margin-bottom: 20px;
     padding-left: 55px;
@@ -102,8 +102,8 @@
                 font-size: 8px;
                 font-weight: 600;
                 &.bigger {
+                  font-size: 10px;
                   font-weight: 900;
-                  font-size: 11px;
                 }
               }
             }
