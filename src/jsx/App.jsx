@@ -36,7 +36,7 @@ function App() {
       <div className="note">
         <em>Note:</em>
         {' '}
-        Trading partners include countries, regions, territories. The United States trade deficit is computed only on the trade of goods, services are excluded.
+        Trading partners include countries, regions, territories. European Union is counted as one. The United States trade deficit is computed only on the trade of goods, services are excluded.
       </div>
     </div>
   );
