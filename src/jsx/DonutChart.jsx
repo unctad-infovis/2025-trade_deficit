@@ -34,7 +34,7 @@ function DonutChart({
           transform="rotate(-90 20 20)"
           style={{ transition: 'stroke-dasharray 1s ease' }}
         />
-        <text x="20" y="22" textAnchor="middle">
+        <text x="21" y="21" textAnchor="middle">
           {big === true ? (
             <tspan className="bigger">
               {percent}
