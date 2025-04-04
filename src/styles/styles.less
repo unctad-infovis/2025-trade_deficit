@@ -50,14 +50,13 @@
       flex-direction: column;
       gap: 1rem;
       .comparison-row {
-        // border-bottom: 2px solid @yellow;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
-        padding: 20px;
+        padding-bottom: 20px;
         &:first-child {
-          // border-top: 2px solid @yellow;
+          border-bottom: 2px solid @yellow;
         }
         .countries {
           display: flex;
@@ -94,8 +93,8 @@
           max-width: 200px;
           text-align: center;
           svg {
-            height: 140px;
-            width: 140px;
+            height: 150px;
+            width: 150px;
             text {
               dominant-baseline: middle;
               fill: @text;

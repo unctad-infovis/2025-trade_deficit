@@ -7,7 +7,7 @@ function DonutChart({
   label,
   percent
 }) {
-  const radius = 18;
+  const radius = 17;
   const circumference = 2 * Math.PI * radius;
   const dash = (percent / 100) * circumference;
 
@@ -20,7 +20,7 @@ function DonutChart({
           r={radius}
           fill="none"
           stroke="rgba(255, 203, 5, 0.3)"
-          strokeWidth="4"
+          strokeWidth="5"
         />
         <circle
           cx="20"
@@ -28,7 +28,7 @@ function DonutChart({
           r={radius}
           fill="none"
           stroke={color}
-          strokeWidth="4"
+          strokeWidth="5"
           strokeDasharray={`${dash} ${circumference - dash}`}
           strokeLinecap="round"
           transform="rotate(-90 20 20)"
@@ -46,7 +46,6 @@ function DonutChart({
               %
             </tspan>
           )}
-
         </text>
       </svg>
       <div className="label">{label}</div>
