@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,600,800,900.css');
+@import 'colors.less';
+
+#app-root-2025-trade_deficit .app {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  @blue: #009edb;
+  @yellow: #ffcb05;
+  @bg: #fff;
+  @text: #000;
+  @muted: #666;
+  max-width: 700px;
+  margin: auto auto;
+
+  .title_container {
+    margin-bottom: 20px;
+    padding-left: 55px;
+    position: relative;
+    &:before {
+      background-image:url(https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg);
+      content: '';
+      display: block;
+      height: 44px;
+      left: 0;
+      position: absolute;
+      top: 10px;
+      width: 44px;
+    }
+    h3 {
+      color: #000;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 34px;
+      margin: 0 0 5px 0;
+    }
+    h4 {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      margin: 0;
+    }
+  }
+  .wrapper {
+    background-color: @bg;
+    color: @text;
+    text-align: center;
+    .infographic {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .comparison-row {
+        // border-bottom: 2px solid @yellow;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 20px;
+        &:first-child {
+          // border-top: 2px solid @yellow;
+        }
+        .countries {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .number {
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 50px;
+            &.bigger {
+              font-size: 70px;
+              font-weight: 900;
+              line-height: 70px;
+            }
+          }
+          .label {
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+        .middle-arrow {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          img {
+            width: 60px;
+            height: auto;
+          }
+          @media all and (max-width: 500px) {
+            display: none;
+          } 
+        }
+        .chart-container {
+          max-width: 200px;
+          text-align: center;
+          svg {
+            height: 140px;
+            width: 140px;
+            text {
+              dominant-baseline: middle;
+              fill: @text;
+              tspan {
+                font-size: 8px;
+                font-weight: 600;
+                &.bigger {
+                  font-weight: 900;
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+          .label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+  .note,
+  .source {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+  }
+}
+
+@import 'basics.less';
