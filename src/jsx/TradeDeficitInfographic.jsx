@@ -30,7 +30,7 @@ function TradeDeficitComparison() {
         <div className="comparison-row">
           <div className="countries">
             <div className="number">10</div>
-            <div className="label"> Trading partners</div>
+            <div className="label">Trading partners</div>
           </div>
           <MiddleArrow />
           <DonutChart
@@ -43,7 +43,7 @@ function TradeDeficitComparison() {
         <div className="comparison-row">
           <div className="countries">
             <div className="number bigger">187</div>
-            <div className="label"> Trading partners</div>
+            <div className="label">Trading partners</div>
           </div>
           <MiddleArrow />
           <DonutChart

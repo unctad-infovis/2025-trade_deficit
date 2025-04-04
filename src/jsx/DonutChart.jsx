@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 function DonutChart({
   big,
   color,
-  label,
   percent
 }) {
   const radius = 17;
@@ -13,6 +12,7 @@ function DonutChart({
 
   return (
     <div className="chart-container">
+      <div className="label">account for</div>
       <svg viewBox="0 0 40 40">
         <circle
           cx="20"
@@ -48,7 +48,7 @@ function DonutChart({
           )}
         </text>
       </svg>
-      <div className="label">{label}</div>
+      <div className="label">of trade deficit</div>
     </div>
   );
 }
@@ -56,7 +56,6 @@ function DonutChart({
 DonutChart.propTypes = {
   big: PropTypes.bool.isRequired,
   color: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
   percent: PropTypes.number.isRequired,
 };
 

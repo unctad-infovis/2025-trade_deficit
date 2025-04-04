@@ -2,11 +2,8 @@
 @import 'colors.less';
 
 #app-root-2025-trade_deficit .app {
-  @bg: #fff;
-  @blue: #009edb;
-  @muted: #666;
-  @text: #000;
-  @yellow: #ffcb05;
+  padding: 10px;
+  background-color: #f4f9fd;
   font-family: Inter, Helvetica, Arial, sans-serif;
   margin: auto auto;
   max-width: 700px;
@@ -41,8 +38,7 @@
     }
   }
   .wrapper {
-    background-color: @bg;
-    color: @text;
+    color: #222;
     text-align: center;
     .infographic {
       align-items: center;
@@ -56,7 +52,7 @@
         justify-content: center;
         padding-bottom: 20px;
         &:first-child {
-          border-bottom: 2px solid @yellow;
+          border-bottom: 4px solid #ffcb05;
         }
         .countries {
           display: flex;
@@ -74,6 +70,7 @@
           }
           .label {
             font-size: 20px;
+            line-height: 20px;
             font-weight: 500;
           }
         }
@@ -82,22 +79,31 @@
           flex-direction: column;
           justify-content: center;
           img {
-            width: 60px;
+            animation: slideRight 0.6s ease-out 0.5s forwards;
             height: auto;
+            transform: translateX(-15px);
+            width: 60px;
+          }
+          @keyframes slideRight {
+            50% {
+              transform: translateX(-10px);
+            }
+            100% {
+              transform: translateX(0);
+            }
           }
           @media all and (max-width: 500px) {
             display: none;
           } 
         }
         .chart-container {
-          max-width: 200px;
-          text-align: center;
           svg {
             height: 150px;
+            margin-top: 5px;
             width: 150px;
             text {
               dominant-baseline: middle;
-              fill: @text;
+              fill: #222;
               tspan {
                 font-size: 8px;
                 font-weight: 600;
@@ -110,8 +116,8 @@
           }
           .label {
             font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 0.2rem;
+            line-height: 20px;
+            font-weight: 500;
           }
         }
       }

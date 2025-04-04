@@ -25,18 +25,18 @@ function App() {
     <div className="app" style={{ opacity }} ref={chartRef}>
       <div className="title_container">
         <h3>Imposing tariffs to all world has little affect on the overall deficit</h3>
-        <h4>Trade deficit with the United States</h4>
+        <h4>Trade deficit with the United States with country groups</h4>
       </div>
       <TradeDeficitInfographic />
       <div className="source">
         <em>Source:</em>
         {' '}
-        UN Trade and Development (UNCTAD)
+        UN Trade and Development (UNCTAD) calculations based on United States national statistics.
       </div>
       <div className="note">
         <em>Note:</em>
         {' '}
-        Trading partners include countries, regions, territories
+        Trading partners include countries, regions, territories. The United States trade deficit is computed only on the trade of goods, services are excluded.
       </div>
     </div>
   );
