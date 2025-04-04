@@ -25,7 +25,7 @@ function App() {
     <div className="app" style={{ opacity }} ref={chartRef}>
       <div className="title_container">
         <h3>Most tariffs have minimal effect on the total trade deficit</h3>
-        <h4>Trade deficit with the United States with country groups</h4>
+        <h4>The United States trade deficit with selected trading partners</h4>
       </div>
       <TradeDeficitInfographic />
       <div className="source">

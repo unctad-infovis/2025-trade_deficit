@@ -29,19 +29,6 @@ function TradeDeficitComparison() {
       <div className="infographic">
         <div className="comparison-row">
           <div className="countries">
-            <div className="number">10</div>
-            <div className="label">Trading partners</div>
-          </div>
-          <MiddleArrow />
-          <DonutChart
-            big
-            color="#009edb"
-            label="Of Trade Deficit"
-            percent={percent2}
-          />
-        </div>
-        <div className="comparison-row">
-          <div className="countries">
             <div className="number bigger">187</div>
             <div className="label">Trading partners</div>
           </div>
@@ -51,6 +38,19 @@ function TradeDeficitComparison() {
             color="#009edb"
             label="Of Trade Deficit"
             percent={percent1}
+          />
+        </div>
+        <div className="comparison-row">
+          <div className="countries">
+            <div className="number">10</div>
+            <div className="label">Trading partners</div>
+          </div>
+          <MiddleArrow />
+          <DonutChart
+            big
+            color="#009edb"
+            label="Of Trade Deficit"
+            percent={percent2}
           />
         </div>
       </div>

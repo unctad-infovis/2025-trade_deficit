@@ -48,7 +48,7 @@ function DonutChart({
           )}
         </text>
       </svg>
-      <div className="label">of trade deficit</div>
+      <div className="label">of US trade deficit</div>
     </div>
   );
 }
